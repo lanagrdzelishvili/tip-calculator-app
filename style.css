@@ -46,7 +46,7 @@ main {
     text-align: right;
     color: #E17457;
 }
-.zero {
+.error1, .error2 {
     display: none;
 }
 #bill-id, #ppl-id {
@@ -55,7 +55,7 @@ main {
     background-position-y: center;
     cursor: pointer;
     background-color: #F3F9FA;
-    border-radius: 5px; 
+    border-radius: 5px;
 
     width: 311px;
     height: 48px;
@@ -69,16 +69,19 @@ main {
     text-align: right;
     color: #00474B;
 }
+#bill-id:focus, #ppl-id:focus, #custom:focus {
+    outline: none;
+}
 #bill-id {
     background-image: url(./images/icon-dollar.svg);
 }
 #ppl-id {
     background-image: url(./images/icon-person.svg);
 }
-/* #bill-id:hover, #custom:hover, #ppl-id:hover {
+#bill-id:hover, #custom:hover, #ppl-id:hover {
     border: 2px solid #26C2AE;
     border-radius: 5px;
-} */
+}
 .tip-p {
     margin-left: 32px;
     margin-bottom: 22px;
@@ -91,7 +94,7 @@ main {
     column-gap: 16px;
     padding: 0 32px;
 }
-.parcent {
+.percent {
     cursor: pointer;
     font-family: 'Space Mono';
     font-style: normal;
@@ -106,6 +109,9 @@ main {
     height: 48px;
     background: #00474B;
     border-radius: 5px;
+}
+.change-color {
+    color: rgb(231, 9, 9);
 }
 #custom {
     cursor: pointer;
@@ -156,7 +162,7 @@ main {
 .dollar {
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 22px;
     line-height: 47px;
     text-align: right;
     letter-spacing: -0.666667px;
@@ -182,7 +188,7 @@ main {
 .reset:hover {
     background: #9FE8DF;
 }
-.parcent:hover {
+.percent:hover {
     color: #00474B;
     background: #26C2AE;
 }
@@ -204,7 +210,7 @@ main {
     #bill-id, #ppl-id {
         width: 379px;
     }
-    .parcent, #custom {
+    .percent, #custom {
         width: 117px;
     }
     .percent-cont {
@@ -220,7 +226,7 @@ main {
         height: 417px;
     }
     .dollar {
-        font-size: 48px;
+        font-size: 32px;
         line-height: 71px;
         letter-spacing: -1px;
     }

@@ -20,7 +20,7 @@
             <div class="bill">
                 <div class="bill-zero">
                     <h2>Bill</h2>
-                    <p class="zero">Can’t be zero</p>
+                    <p class="zero error1">Can’t be zero</p>
                 </div>
                 <input type="number" id="bill-id" name="number" placeholder="0" required>
             </div>
@@ -28,20 +28,18 @@
             <div class="tip"><p class="tip-p">Select Tip %</p></div>
 
             <div class="percent-cont">
-                <div class="parcent">5%</div>
-                <div class="parcent">10%</div>
-                <div class="parcent">15%</div>
-                <div class="parcent">25%</div>
-                <div class="parcent">50%</div>
-                <div class="custom-div">
-                    <input type="number" id="custom" name="custom" placeholder="Custom" required>
-                </div>
+                <div class="percent">5%</div>
+                <div class="percent">10%</div>
+                <div class="percent">15%</div>
+                <div class="percent">25%</div>
+                <div class="percent">50%</div>
+                <input type="number" id="custom" name="custom" placeholder="Custom" required>
             </div>
 
             <div class="ppl">
                 <div class="ppl-zero">
                     <h2>Number of People</h2>
-                    <p class="zero">Can’t be zero</p>
+                    <p class="zero error2">Can’t be zero</p>
                 </div>
                 <input type="number" id="ppl-id" name="number" placeholder="0" required>
             </div>
@@ -53,7 +51,7 @@
                     <h3>Tip Amount</h3>
                     <p>/ person</p>
                 </div>
-                <div><h1 class="dollar">$4.27</h1></div>
+                <div><h6 class="dollar" id="tip-amount">$0.00</h6></div>
             </div>
 
             <div class="tip-total">
@@ -61,11 +59,14 @@
                     <h3>Total</h3>
                     <p>/ person</p>
                 </div>
-                <div><h1 class="dollar">$32.79</h1></div>
+                <div><h6 class="dollar" id="total">$0.00</h6></div>
             </div>
 
             <button class="reset" onclick="myReset()" id="reset">RESET</button>
         </div>
     </main>
+
+    <script src="./script.js"></script>
+    <!-- <script src="./scriptNika.js"></script> -->
 </body>
 </html>
