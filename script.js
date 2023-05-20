@@ -19,7 +19,7 @@ people.addEventListener("input", ()=> {
 
 custom.addEventListener("input", ()=> {
     let customInput = parseInt(custom.value);
-    amount(perInt);
+    amount(customInput);
 });
 
 percents.forEach((per) => {
@@ -40,8 +40,6 @@ function amount(per) {
 
     tipAmount.textContent = "$" + tip_Amount.toFixed(2);
     total.textContent = "$" + toTal.toFixed(2);
-
-    // if(Number(bill.value) > 0 && Number(people.value) > 0) {}
 }
 
 function checkInputBill() {
