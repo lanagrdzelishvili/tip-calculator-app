@@ -6,15 +6,19 @@ const percents = document.querySelectorAll(".percent");
 const custom = document.querySelector("#custom");
 const people = document.querySelector("#ppl-id");
 const tipAmount = document.querySelector("#tip-amount");
-// 
+
 bill.addEventListener("input", ()=> {
     checkInputBill();
     let bilVal= parseInt(bill.value);
+    let perInt =parseInt(document.querySelector(".percent.change-color").textContent.replace("%", ""));
+    amount(perInt);
 });
 
 people.addEventListener("input", ()=> {
     checkInputPeople();
     let pplVal= parseInt(people.value);
+    let perInt =parseInt(document.querySelector(".percent.change-color").textContent.replace("%", ""));
+    amount(perInt);
 });
 
 custom.addEventListener("input", ()=> {
